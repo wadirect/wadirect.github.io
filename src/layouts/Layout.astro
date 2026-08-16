@@ -41,6 +41,16 @@ const ogImage = "https://res.cloudinary.com/dpx6w78bt/image/upload/f_auto/q_auto
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalURL} />
 
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8BS3MLD4JL" is:inline></script>
+		<script is:inline>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-8BS3MLD4JL');
+		</script>
+
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={canonicalURL} />
 		<meta property="og:title" content={title} />
