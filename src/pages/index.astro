@@ -1,0 +1,68 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WaDirectForm from '../components/WaDirectForm.tsx';
+import { MessageCircle, ShieldCheck, Zap } from 'lucide-react';
+---
+
+<Layout>
+	<div class="space-y-16">
+		{/* Hero Section */}
+		<section class="text-center space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+			<div class="inline-flex justify-center items-center p-3 bg-green-100 rounded-full mb-2">
+				<MessageCircle class="w-8 h-8 text-green-600" />
+			</div>
+			<h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
+				WhatsApp Direct Chat
+			</h1>
+			<p class="text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+				Send WhatsApp messages instantly without saving the number to your contacts. Fast, secure, and works entirely in your browser.
+			</p>
+		</section>
+
+		{/* Interactive Form Section */}
+		<section class="max-w-xl mx-auto w-full relative z-10 animate-in fade-in slide-in-from-bottom-8 duration-700 delay-150">
+			<WaDirectForm client:load />
+		</section>
+
+		{/* Features Section */}
+		<section class="grid sm:grid-cols-2 gap-8 pt-8">
+			<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+				<h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+					<div class="p-2 bg-blue-50 text-blue-600 rounded-lg">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+					</div>
+					How to Use
+				</h2>
+				<ol class="space-y-4 text-slate-600 list-decimal list-inside marker:text-slate-400 marker:font-medium">
+					<li class="pl-2">Enter the country code and the phone number of the recipient.</li>
+					<li class="pl-2">Type your message in the optional message box.</li>
+					<li class="pl-2">Click the <strong>Open in WhatsApp</strong> button.</li>
+					<li class="pl-2">Your WhatsApp app (or WhatsApp Web) will open instantly with the chat ready.</li>
+				</ol>
+			</div>
+
+			<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+				<h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+					<div class="p-2 bg-purple-50 text-purple-600 rounded-lg">
+						<Zap class="w-5 h-5" />
+					</div>
+					Why Use WA Direct?
+				</h2>
+				<ul class="space-y-4 text-slate-600">
+					<li class="flex items-start gap-3">
+						<div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-green-500"></div>
+						<p><strong>No Cluttered Contacts:</strong> Keep your phonebook clean by avoiding temporary numbers.</p>
+					</li>
+					<li class="flex items-start gap-3">
+						<div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-green-500"></div>
+						<p><strong>100% Private:</strong> We don't use servers. Your numbers and messages never leave your browser.</p>
+					</li>
+					<li class="flex items-start gap-3">
+						<div class="mt-1 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-green-500"></div>
+						<p><strong>Fast & Free:</strong> Instantly generate wa.me links without any ads or popups.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</Layout>
