@@ -1,46 +1,26 @@
-# Astro Starter Kit: Basics
+# WA Direct
 
-```sh
-npm create astro@latest -- --template basics
-```
+WhatsApp Direct Chat Online - Send WhatsApp messages directly without saving the contact. A free, fast, and 100% private client-side web application built with Astro, React, and Tailwind CSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/kishara)
 
-## 🚀 Project Structure
+## Features
 
-Inside of your Astro project, you'll see the following folders and files:
+- **100% Client-Side & Private**: Runs completely in your browser. No data is saved or tracked on any server.
+- **Auto Country Detection**: Automatically selects your country code based on timezone.
+- **Smart Clipboard & Paste**: Paste and clean formatted numbers instantly.
+- **Quick Snippets**: One-click message templates with custom snippet support.
+- **Click-to-Chat Link Creator**: Instantly copy shareable `wa.me` links.
+- **QR Code Generator**: Generate and download printable PNG QR codes for instant chat.
+- **Recent Numbers Tray**: Private locally-stored recent contacts with masked privacy numbers.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## Tech Stack
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- **Framework**: [Astro](https://astro.build) (Static Site Generation)
+- **UI**: [React](https://react.dev)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com)
+- **Icons**: [Lucide React](https://lucide.dev)
 
-## 🧞 Commands
+## License
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+MIT

@@ -78,12 +78,26 @@ const ogImage = "https://res.cloudinary.com/dpx6w78bt/image/upload/f_auto/q_auto
 					</svg>
 					WA Direct
 				</a>
-				<div class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm font-medium border border-green-100 shadow-sm">
-					<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-						<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-						<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-					</svg>
-					100% Private - No data is saved or tracked
+				<div class="flex items-center gap-2 sm:gap-3">
+					<div class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-green-50 text-green-700 text-sm font-medium border border-green-100 shadow-sm">
+						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+							<path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+						</svg>
+						100% Private - No data is saved or tracked
+					</div>
+					<a
+						href="https://ko-fi.com/kishara"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 hover:bg-amber-100 border border-amber-200 text-amber-900 text-sm font-medium transition-colors"
+						title="Support the Developer"
+						aria-label="Support the Developer"
+					>
+						<span class="text-base leading-none">☕</span>
+						<span class="hidden sm:inline">Support the Developer</span>
+						<span class="sm:hidden">Support</span>
+					</a>
 				</div>
 			</div>
 		</header>
@@ -93,9 +107,20 @@ const ogImage = "https://res.cloudinary.com/dpx6w78bt/image/upload/f_auto/q_auto
 		</main>
 
 		<footer class="border-t border-slate-200 bg-white mt-auto">
-			<div class="max-w-3xl mx-auto px-4 py-8 text-center text-slate-500 text-sm">
+			<div class="max-w-3xl mx-auto px-4 py-8 text-center text-slate-500 text-sm flex flex-col items-center gap-3">
+				<a
+					href="https://ko-fi.com/kishara"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-50 hover:bg-amber-100 border border-amber-200 text-amber-900 text-sm font-medium transition-colors"
+					title="Support the Developer"
+					aria-label="Support the Developer"
+				>
+					<span class="text-base leading-none">☕</span>
+					<span>Support the Developer</span>
+				</a>
 				<p>WA Direct is an independent tool and is not affiliated with WhatsApp Inc. or Meta Platforms, Inc.</p>
-				<p class="mt-2">&copy; {new Date().getFullYear()} WA Direct. All rights reserved.</p>
+				<p>&copy; {new Date().getFullYear()} WA Direct. All rights reserved.</p>
 			</div>
 		</footer>
 	</body>
