@@ -2,7 +2,7 @@
 
 WhatsApp Direct Chat Online - Send WhatsApp messages directly without saving the contact. A free, fast, and 100% private client-side web application built with Astro, React, and Tailwind CSS.
 
-[![Support on Ko-fi](https://img.shields.io/badge/Ko--fi-Support-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/kishara)
+[![Buy Me A Coffee on Gumroad](https://img.shields.io/badge/Gumroad-Buy%20Me%20A%20Coffee-ff90e8?style=for-the-badge&logo=gumroad&logoColor=black)](https://kisharadilshan.gumroad.com/coffee)
 
 ## Features
 
